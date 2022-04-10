@@ -46,7 +46,7 @@ if dao == 'Friends With Benefits DAO':
     st.markdown('Total DAO Power: ${:,.2f}'.format(sum(summation)))
     st.markdown('DAO Power per Capita: ${:,.2f}'.format(sum(summation) / num_members))
 
-    st.subheader('Top tokens holdings of {:,d} {:} members'.format(num_members, dao))
+    st.subheader('Top holdings of {:,d} {:} members'.format(num_members, dao))
 
     st.bar_chart(summation)
     st.caption('Top 30 Token/DAO Holdings Bar Chart')
@@ -70,7 +70,7 @@ elif dao == 'ClearDAO':
     st.markdown('Total DAO Power: ${:,.2f}'.format(sum(summation2)))
     st.markdown('DAO Power per Capita: ${:,.2f}'.format(sum(summation2) / num_members2))
 
-    st.subheader('Top tokens holdings of {:,d} DAO members'.format(num_members2))
+    st.subheader('Top holdings of {:,d} DAO members'.format(num_members2))
 
     st.bar_chart(summation2)
     st.caption('Top 30 Token/DAO Holdings Bar Chart')
