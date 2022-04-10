@@ -15,13 +15,14 @@ st.subheader('DAO Power is the total wealth held by the specific DAO community')
 
 dao = st.selectbox('Pick DAO',['Friends With Benefits DAO', 'Other DAO'])
 
-st.header('DAO Member Stats')
-
-st.markdown('Number of DAO members: %d' % num_members)
-st.markdown('Total DAO Power: ${:,.2f}'.format(sum(summation)))
-st.markdown('DAO Power per Capita: ${:,.2f}'.format(sum(summation) / num_members))
 
 if dao == 'Friends With Benefits DAO':
+    st.header('DAO Member Stats')
+
+    st.markdown('Number of DAO members: %d' % num_members)
+    st.markdown('Total DAO Power: ${:,.2f}'.format(sum(summation)))
+    st.markdown('DAO Power per Capita: ${:,.2f}'.format(sum(summation) / num_members))
+
 
     st.header('Top tokens holdings of %d DAO members' % len(df.address.unique()))
 
