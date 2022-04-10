@@ -19,6 +19,10 @@ for i in tickers_json['data']['items']:
         include_tickers.add(i['contract_ticker_symbol'])
     
     
+num_members = len(df.address.unique())
+num_members2 = len(df2.address.unique())
+
+
 df = df[df['contract_ticker_symbol'].isin(include_tickers)]
 df2 = df2[df2['contract_ticker_symbol'].isin(include_tickers)]
 
@@ -27,8 +31,7 @@ df['USD'] = df['quote']
 df2['USD'] = df2['quote']
 summation = df.groupby(['contract_ticker_symbol'])['USD'].sum().sort_values(ascending=False).head(30)
 summation2 = df2.groupby(['contract_ticker_symbol'])['USD'].sum().sort_values(ascending=False).head(30)
-num_members = len(df.address.unique())
-num_members2 = len(df2.address.unique())
+
           
 st.title('DAO Power')
 
@@ -37,7 +40,7 @@ st.subheader('DAO Power is the total wealth held by the specific DAO community')
 dao = st.selectbox('Pick DAO',['Friends With Benefits DAO', 'ClearDAO','Other DAO'])
 
 if dao == 'Friends With Benefits DAO':
-    st.header('DAO Member Stats')
+    st.header('%s Member Stats' % dao)
 
     st.markdown('Number of DAO members: {:,d}'.format(num_members))
     st.markdown('Total DAO Power: ${:,.2f}'.format(sum(summation)))
