@@ -35,7 +35,7 @@ summation2 = df2.groupby(['contract_ticker_symbol'])['USD'].sum().sort_values(as
           
 st.title('DAO Power')
 
-st.subheader('DAO Power is the total wealth held by the specific DAO community')
+st.subheader('DAO Power - the total wealth held by a DAO community')
 
 dao = st.selectbox('Pick DAO',['Friends With Benefits DAO', 'ClearDAO','Other DAO'])
 
@@ -49,6 +49,8 @@ if dao == 'Friends With Benefits DAO':
     st.header('Top tokens holdings of {:,d} DAO members'.format(num_members))
 
     st.bar_chart(summation)
+    st.caption('Top 30 Token/DAO Holdings Bar Chart')
+    
     st.dataframe(summation)
     st.caption('Top Token Holding')
 
@@ -71,6 +73,8 @@ elif dao == 'ClearDAO':
     st.header('Top tokens holdings of {:,d} DAO members'.format(num_members2))
 
     st.bar_chart(summation2)
+    st.caption('Top 30 Token/DAO Holdings Bar Chart')
+    
     st.dataframe(summation2)
     st.caption('Top Token Holding')
 
