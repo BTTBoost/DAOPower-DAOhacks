@@ -3,5 +3,5 @@
 
 DAO Power is the total wealth held by the specific DAO community
 
-<iframe src="https://share.streamlit.io/jaimindp/daopower-daohacks/main/DAOpower_frontend.py"></iframe>
+Use DAO Power: https://share.streamlit.io/jaimindp/daopower-daohacks/main/DAOpower_frontend.py
 
