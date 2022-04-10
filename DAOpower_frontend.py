@@ -44,7 +44,7 @@ if dao == 'Friends With Benefits DAO':
 
     st.markdown('Number of DAO members: {:,d}'.format(num_members))
     st.markdown('Total DAO Power: ${:,.2f}'.format(sum(summation)))
-    st.markdown('DAO Power per Capita: ${:,.2f}'.format(sum(summation) / num_members))
+    st.markdown('DAO Power per capita: ${:,.2f}'.format(sum(summation) / num_members))
 
     st.subheader('Top holdings of {:,d} {:} members'.format(num_members, dao))
 
