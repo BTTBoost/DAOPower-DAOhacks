@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv('dao_power_small.csv')
+df = pd.read_csv('dao_power.csv')
 
 df['USD'] = df['quote']
 summation = df.groupby(['contract_ticker_symbol'])['USD'].sum().sort_values(ascending=False).head(30)
@@ -32,12 +32,10 @@ if dao == 'Friends With Benefits DAO':
 
     tokens = list(summation.index)
 
-    selected = st.multiselect('Select tokens to view:', tokens, default=['ETH','LINK'])
+    selected = st.multiselect('Select tokens to view:', tokens, default=['ETH'])
 
     if tokens != selected:
         st.bar_chart(summation[summation.index.isin(selected)])
 
 else:
     st.subheader('More DAOs coming soon')
-
-
