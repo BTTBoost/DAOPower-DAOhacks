@@ -1,6 +1,6 @@
-# DAOPower - 🎉 ETHGlobal DAOhacks joint winner + Covalent Prize winner! 🎉
+# 🎉 ETHGlobal DAOhacks joint winner + Covalent Prize winner! 🎉
 
-### ⚡ DAO Power ⚡ - The total wealth held by a specific DAO community
+## ⚡ DAO Power ⚡ - The total wealth held by a specific DAO community
 
 Use DAO Power: https://share.streamlit.io/jaimindp/daopower-daohacks/main/DAOpower_frontend.py
 
