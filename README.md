@@ -1,4 +1,4 @@
-# 🎉 ETHGlobal DAOhacks joint winner + Covalent Prize winner! 🎉
+# 🎉 ETHGlobal DAOhacks winner + Covalent Prize winner! 🎉
 
 ## ⚡ DAO Power ⚡ - The total wealth held by a specific DAO community
 
