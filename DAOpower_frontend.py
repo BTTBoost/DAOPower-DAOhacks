@@ -15,7 +15,7 @@ tickers_json = r.json()
 include_tickers = set()
 
 for i in tickers_json['data']['items']:
-    if i['contract_ticker_symbol'] not in ['META','DEGEN','ALPHA','ENS','LOOKS','GNO']:
+    if i['contract_ticker_symbol'] not in ['META','DEGEN','ALPHA','LOOKS','GNO']:
         include_tickers.add(i['contract_ticker_symbol'])
     
     
@@ -37,9 +37,9 @@ st.title('Richard Power')
 
 st.subheader('Richard Power - the total wealth held by the Richard community')
 
-dao = st.selectbox('Pick ENS Subgroup',['Friends With Benefits DAO', 'ClearDAO', 'Other DAO'])
+dao = st.selectbox('Pick ENS Subgroup',['Richards', 'ClearDAO', 'Other DAO'])
 
-if dao == 'Friends With Benefits DAO':
+if dao == 'Richards':
     st.header('Richard Member Stats')
 
     st.markdown('Number of Richards: {:,d}'.format(num_members))
