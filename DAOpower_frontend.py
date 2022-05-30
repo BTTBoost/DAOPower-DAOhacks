@@ -40,7 +40,7 @@ st.subheader('Richard Power - the total wealth held by the Richard community')
 dao = st.selectbox('Pick ENS',['Friends With Benefits DAO', 'ClearDAO', 'Other DAO'])
 
 if dao == 'Friends With Benefits DAO':
-    st.header('%s Member Stats' % dao)
+    st.header('Richard Member Stats')
 
     st.markdown('Number of Richards: {:,d}'.format(num_members))
     st.markdown('Total Richard Power: ${:,.2f}'.format(sum(summation)))
