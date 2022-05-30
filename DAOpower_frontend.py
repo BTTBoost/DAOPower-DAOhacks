@@ -33,18 +33,18 @@ summation = df.groupby(['contract_ticker_symbol'])['USD'].sum().sort_values(asce
 summation2 = df2.groupby(['contract_ticker_symbol'])['USD'].sum().sort_values(ascending=False).head(30)
 
           
-st.title('DAO Power')
+st.title('Richard Power')
 
-st.subheader('DAO Power - the total wealth held by a DAO community')
+st.subheader('Richard Power - the total wealth held by the Richard community')
 
-dao = st.selectbox('Pick DAO',['Friends With Benefits DAO', 'ClearDAO', 'Other DAO'])
+dao = st.selectbox('Pick ENS',['Friends With Benefits DAO', 'ClearDAO', 'Other DAO'])
 
 if dao == 'Friends With Benefits DAO':
     st.header('%s Member Stats' % dao)
 
-    st.markdown('Number of DAO members: {:,d}'.format(num_members))
-    st.markdown('Total DAO Power: ${:,.2f}'.format(sum(summation)))
-    st.markdown('DAO Power per capita: ${:,.2f}'.format(sum(summation) / num_members))
+    st.markdown('Number of Richards: {:,d}'.format(num_members))
+    st.markdown('Total Richard Power: ${:,.2f}'.format(sum(summation)))
+    st.markdown('Richard Power per capita: ${:,.2f}'.format(sum(summation) / num_members))
 
     st.subheader('Top holdings of {:,d} {:} members'.format(num_members, dao))
 
