@@ -37,7 +37,7 @@ st.title('Richard Power')
 
 st.subheader('Richard Power - the total wealth held by the Richard community')
 
-dao = st.selectbox('Pick ENS',['Friends With Benefits DAO', 'ClearDAO', 'Other DAO'])
+dao = st.selectbox('Pick ENS Subgroup',['Friends With Benefits DAO', 'ClearDAO', 'Other DAO'])
 
 if dao == 'Friends With Benefits DAO':
     st.header('Richard Member Stats')
